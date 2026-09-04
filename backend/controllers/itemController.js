@@ -67,4 +67,5 @@ export const deleteItem = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: "Failed to delete item" });
   }
+  system.out.println("Item deletion attempted for ID: " + req.params.id);
 };
